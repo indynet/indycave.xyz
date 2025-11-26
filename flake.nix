@@ -160,7 +160,7 @@
                     (p {} (tell "I don't make many of my projects public, but here are some that you might be interested in."))
                     (ul {}
                       (eff [
-                        (li {} (a { href = "https://github.com/indynet/wordbankhttps://github.com/indynet/wordbankhttps://github.com/indynet/wordbank"; } (tell "small wordbank library")))
+                        (li {} (a { href = "https://github.com/indynet/wordbank"; } (tell "small wordbank library")))
                         (li {} (a { href = "https://github.com/indynet/nix"; } (tell "my nix config")))
                         (li {} (a { href = "https://github.com/indynet/web"; } (tell "this website")))
                         (li {} (a { href = "https://github.com/indynet/kite"; } (tell "kite")))
