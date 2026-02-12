@@ -158,8 +158,11 @@ main {
 }
 
 #content {
+    box-sizing: border-box;
+    max-width: 900px;
+    padding: 0 12px;
     margin: 0 auto;
-    width: 900px;
+    width: 100%;
 }
 
 .box {
