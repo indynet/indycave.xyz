@@ -52,43 +52,8 @@ html {
     min-width: 0;
 }
 
-.mul-text {
-    border: 1.8px solid #0a0d12;
-    border-radius: 2px;
-    min-height: 100px;
-    padding: 5px;
-}
-
-.nf {
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.txt {
-    flex: 0 0 120px;
-}
-
 .pointer {
     cursor: pointer;
-}
-
-.loading {
-    position: fixed;
-    z-index: 1001;
-    top: 50%;
-    left: 50%;
-    height: 120px;
-    width: 120px;
-}
-
-#notifications {
-    font-display: swap;
-    font-family: tandy;
-    font-size: 10px;
-    position: fixed;
-    color: white;
 }
 
 ul, ol {
@@ -143,19 +108,6 @@ a:hover {
     text-underline-offset: 4px;
     font-size: 16.5px;
     cursor: pointer;
-}
-
-.mdiv {
-    font-family: ibm_conv;
-    font-display: swap;
-    text-align: center;
-    background: none;
-    font-size: 10px;
-    color: white;
-}
-
-.midiv a:hover {
-    font-size: 11px;
 }
 
 h1 {
@@ -233,39 +185,6 @@ main {
     margin-left: 6px;
 }
 
-#gallery button {
-    background-color: #141414;
-    font-family: ibm_conv;
-    border-color: white;
-    border-radius: 5px;
-    border-width: 1px;
-    font-size: 10px;
-    cursor: pointer;
-    padding: 4px;
-    color: white;
-}
-
-#photos img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer; 
-}
-
-#photos {
-    gap: 10px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
-}
-
-@media(max-width: 768px) {
-    .photos {
-        grid-template-columns: repeat(auto-fill, minmax(1, 1fr));
-    }
-}
-
 .links {
     padding-bottom: 5px;
 }
@@ -322,144 +241,4 @@ webkit scroll stuff?
 
 .box.thread-container::-webkit-scrollbar-track {
     -webkit-box-shadow: none;
-}
-
-.thumb {
-    border: 2px solid #0a0d12;
-    border-radius: 4px;
-    margin: 5px;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.controls > button {
-    display: flex;
-    margin: 1em;
-}
-
-#backdrop {
-    backdrop-filter: blur(10px);
-    position: absolute;
-    bottom: 0px;
-    bottom: 0px;
-    z-index: 1;
-    right: 0px;
-    left: 0px;
-    top:0px;
-
-    animation-name: blurIn;
-    animation-duration: 150ms;
-    animation-timing-function: ease;
-}
-
-#modal {
-    background-color:rgba(0,0,0,0.5);
-    animation-timing-function: ease;
-    animation-duration: 150ms;
-    justify-content: center;
-    animation-name: fadeIn;
-    flex-direction:column;
-    animation-delay: 0ms;
-    align-items: center;
-    position: fixed;
-    z-index: 1000;
-    display:flex;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-}
-
-#modal > .modal-underlay {
-    position: absolute;
-    z-index: 1;
-    bottom:0px;
-    right: 0px;
-    left: 0px;
-    top:0px;
-}
-
-#modal > .modal-content {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #000000;
-    border: 2px solid #0a0d12;
-    font-family: mbyte_ega;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    padding: 10px 15px;
-    font-display: swap;
-    font-size: 15.459px;
-    color: #bdbdbd;
-
-    z-index: 2;
-    margin: 5px;
-
-    max-width: fit-content;
-
-    animation-name:zoomIn;
-    animation-duration: 150ms;
-    animation-timing-function: ease;
-}
-
-#modal.closing {
-    animation-name: fadeOut;
-    animation-duration:150ms;
-    animation-timing-function: ease;
-}
-
-#modal.closing > .modal-content {
-    animation-name: zoomOut;
-    animation-duration:150ms;
-    animation-timing-function: ease;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes fadeOut {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@keyframes zoomIn {
-    0% { transform: scale(0.9); }
-    100% { transform: scale(1); }
-}
-
-@keyframes zoomOut {
-    0% {transform: scale(1);}
-    100% {transform: scale(0.9);}
-}
-
-@keyframes blurIn {
-    0% {
-	backdrop-filter: blur(0px);
-    }
-
-    100% {
-	backdrop-filter: blur(10px);
-    }
-}
-
-.inter {
-    cursor: pointer;
-}
-
-.full {
-    max-height: 90vw;
-    max-width: 90vw;
-    height: auto;
-    width: auto;
-}
-
-.imgbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
