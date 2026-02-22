@@ -8,7 +8,7 @@
 
   outputs     = { self, nixpkgs, kite, ... }:
     let
-      copyright = "2025";
+      copyright = "2026";
       system    = "x86_64-linux";
       pkgs      = import nixpkgs { inherit system; };
     in
@@ -76,7 +76,7 @@
                     (p {}
                       (eff [
                         (tell "My name is indy")
-                        (tell " I'm a self-taught programmer of eight years.")
+                        (tell " I'm a self-taught programmer of nine years.")
                       ]))
 
                     (p {} (tell "I spend my time, pretty much every day, making things. I'm quite creative, and I take pride in my ability to create."))
